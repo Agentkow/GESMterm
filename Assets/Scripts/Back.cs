@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Back : MonoBehaviour {
 
-    public void BackClicked()
+    public void BackButtonClicked()
     {
         //load next scene
         SceneManager.LoadScene("Title_scene");

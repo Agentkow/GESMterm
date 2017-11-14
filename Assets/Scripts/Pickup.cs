@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour {
 
-
+    [SerializeField]
     private AudioSource audioSource;
 
     [SerializeField]
@@ -18,7 +18,6 @@ public class Pickup : MonoBehaviour {
     // Use this for initialization
     void Start () {
         audioSource = GetComponent<AudioSource>();
-        StartCoroutine(delay());
 
         pickupCollider = GetComponent<BoxCollider2D>();
         pickupSprite = GetComponent<SpriteRenderer>();
@@ -28,18 +27,16 @@ public class Pickup : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.tag =="Player")
         {
             audioSource.Play();
             pickupCollider.enabled = false;
             pickupSprite.enabled = false;
-            delay();
-            Destroy(gameObject);
+
+            float length = audioSource.clip.length + 0.2f;
+            
+            Destroy(gameObject, length);
         }
     }
 
-    IEnumerator delay()
-    {
-        yield return new WaitForSeconds(audioSource.clip.length+0.2f);
-    }
 }

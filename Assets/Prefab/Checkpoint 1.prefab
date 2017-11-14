@@ -85,8 +85,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeScale: 1.5
   deactivatedScale: 1
-  activeColor: {r: 1, g: 0, b: 0, a: 1}
-  deactiveColor: {r: 1, g: 0.7647059, b: 0, a: 1}
+  activeColor: {r: 1, g: 0.724138, b: 0, a: 1}
+  deactiveColor: {r: 0.5955882, g: 0.45544982, b: 0, a: 1}
 --- !u!212 &212791265665961892
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -110,14 +110,12 @@ public class PlayerController : MonoBehaviour {
         
         if(collision.gameObject.CompareTag("Pickup"))
         {
-            collision.gameObject.SetActive(false);
+            
             canFloat = true;
             
 
         }
-        if(collision.gameObject.CompareTag("Coin"))
-        {
-            collision.gameObject.SetActive(false);
-        }
+        
+       
     }
 }

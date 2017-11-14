@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4239469003669246}
   - component: {fileID: 212525279713369046}
   - component: {fileID: 61014835102449708}
-  - component: {fileID: 82203264969081706}
   - component: {fileID: 114551571277235418}
+  - component: {fileID: 82757111744436542}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Pickup
@@ -68,7 +68,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!82 &82203264969081706
+--- !u!82 &82757111744436542
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03150ddea0c9d1c4cbea7b0add590e5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   pickupCollider: {fileID: 0}
   pickupSprite: {fileID: 0}
 --- !u!212 &212525279713369046
